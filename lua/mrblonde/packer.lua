@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({ 
+  use({
 	  'rose-pine/neovim',
 	  as = 'rose-pine',
 	  config = function()
@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+  use('nvim-tree/nvim-tree.lua')
+  use('nvim-tree/nvim-web-devicons')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
